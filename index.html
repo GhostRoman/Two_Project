@@ -1,15 +1,14 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Add Bootstrap CSS link here -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
     <title>Attendance System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 .nav-item img {
     width: 24px;
     height: 24px;
@@ -17,8 +16,59 @@ body {
 .nav-itemi img {
     width: 24px;
     height: 24px;
-    
 }
+.small-font {
+            font-size: 12px;
+            color: gray;
+        }
+input[type="text"] {
+            width: 70%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            color: #ff6d37;
+            border-radius: 5px;
+        }
+        .d-flex-align-center {
+            display: flex;
+            align-items: center;
+        }
+        .mt-4 {
+            margin-top: 1.5rem !important;
+        }
+        .mb-4 {
+            margin-bottom: 1.5rem !important;
+        }
+      th {color: white;
+    }
+      .blue {
+        background-color: #8cc3ff;
+        text-align: center;
+      }
+      /* Стили для круговых элементов */
+.color-radio {
+    appearance: none;
+    width: 15px; /* Размер круга */
+    height: 15px; /* Размер круга */
+    border-radius: 50%; /* Делаем круг */
+    border: 1px solid; /* Граница круга */
+}
+
+/* Цвет круга для зеленого круга */
+#green-radio {
+    border: 1px solid green;
+}
+
+/* Цвет круга для желтого круга */
+#yellow-radio {
+    border: 1px solid yellow;
+}
+
+/* Цвет круга для красного круга */
+#red-radio {
+    /* background-color: red; */
+    border: 1px solid red;
+}
+
     </style>
 </head>
 <body>
@@ -32,12 +82,11 @@ body {
                     <a class="nav-link active" href="#">Attendance</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Schedule</a> <!-- Добавлен класс text-white здесь -->
+                    <a class="nav-link text-white" href="#">Schedule</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Homework</a> <!-- Добавлен класс text-white здесь -->
+                    <a class="nav-link text-white" href="#">Homework</a>
                 </li>
-                <!-- Группа элементов справа -->
                 <li class="nav-item ml-auto">
                     <a class="nav-link" href="#"><img src="img/notifications-bell-button.png" alt=""></a>
                 </li>
@@ -51,84 +100,69 @@ body {
         </nav>
     </header>
     
-    <h1 class="h4 text-center">23 APRIL, TUESDAY</h1>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">1 lesson</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">2 lesson</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">3 lesson</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">4 lesson</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">5 lesson</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">6 lesson</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">7 lesson</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">8 lesson</a>
-          </li>
-      </ul>
-
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Table</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .small-font {
-            font-size: 12px;
-            color: gray;
-        }
-        .table-bordered th, .table-bordered td {
-            border: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <table class="table table-bordered">
+    <main class="container">
+    <div class="container mt-4">
+        <h1 class="h4 text-center mb-4">23 APRIL, TUESDAY</h1>
+        <div class="d-flex justify-content-between align-items-center mb-0">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">1 lesson</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">2 lesson</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">3 lesson</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">4 lesson</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">5 lesson</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">6 lesson</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">7 lesson</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">8 lesson</a>
+                </li>
+            </ul>
+        </div>
+        
+        <table class="table">
             <thead>
                 <tr>
-                    <th class="small-font">Column 1</th>
-                    <th class="small-font">Column 2</th>
-                    <th class="small-font">Column 3</th>
-                    <th class="small-font">Column 4</th>
+                    <th class="small-font">Group</th>
+                    <th class="small-font">Subject</th>
+                    <th class="small-font">Lesson topic</th>
+                    <th class="small-font">Homework</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Row 1, Cell 1</td>
-                    <td>Row 1, Cell 2</td>
-                    <td>Row 1, Cell 3</td>
-                    <td>Row 1, Cell 4</td>
+                    <td>ABC-1234</td>
+                    <td>HTML & CSS</td>
+                    <td>
+                        <form action="/submit" method="post">
+                            <input type="text" id="userInput" name="userInput">
+                        </form>
+                    </td>
+                    <td><button class="btn btn-sm btn-primary">Add homework</button></td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
-
-    <main class="container mt-4">
+    
+    
         <section class="row">
-            <div class="col-md-6">
-                <table class="table table-bordered">
-                    <thead>
+            <div class="col-md-12">
+                <table class="table">
+                    <thead class="blue">
                         <tr>
+                            <th></th>
                             <th></th>
                             <th>Name</th>
                             <th>Gpa</th>
@@ -140,47 +174,100 @@ body {
                     </thead>
                     <tbody>
                         <tr>
+                            <td></td>
                             <td>1</td>
                             <td>Ashton Hickman</td>
                             <td>10</td>
-                            <td>HTML & CSS</td>
-                            <td></td>
-                            <td></td>
-                            <td><button class="btn btn-sm btn-success">Add homework</button></td>
+                            <td>
+                                <input type="radio" id="green-radio" name="color" class="color-radio" value="green">
+                                <input type="radio" id="yellow-radio" name="color" class="color-radio" value="yellow">
+                                <input type="radio" id="red-radio" name="color" class="color-radio" value="red">
+                            </td>
+                            <td>
+                                <select id="gender" name="gender" required>
+                                    <option value="male">-</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select id="gender" name="gender" required>
+                                    <option value="male">-</option>
+                                </select>
+                            </td>
+                            <td><textarea id="message" name="userMessage"></textarea></td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td>2</td>
                             <td>Mischa Roberson</td>
                             <td>9</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><button class="btn btn-sm btn-success">Add homework</button></td>
+                            <td>
+                                <input type="radio" id="green-radio" name="color" class="color-radio" value="green">
+                                <input type="radio" id="yellow-radio" name="color" class="color-radio" value="yellow">
+                                <input type="radio" id="red-radio" name="color" class="color-radio" value="red">
+                            </td>
+                            <td>
+                                <select id="gender" name="gender" required>
+                                    <option value="male">-</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select id="gender" name="gender" required>
+                                    <option value="male">-</option>
+                                </select>
+                            </td>
+                            <td><textarea id="message" name="userMessage"></textarea></td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td>3</td>
-                            <td>Jaydon Metcalfe</td>
+                            <td>Jaydon Metcalife</td>
                             <td>11</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><button class="btn btn-sm btn-success">Add homework</button></td>
+                            <td>
+                                <input type="radio" id="green-radio" name="color" class="color-radio" value="green">
+                                <input type="radio" id="yellow-radio" name="color" class="color-radio" value="yellow">
+                                <input type="radio" id="red-radio" name="color" class="color-radio" value="red">
+                            </td>
+                            <td>
+                                <select id="gender" name="gender" required>
+                                    <option value="male">-</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select id="gender" name="gender" required>
+                                    <option value="male">-</option>
+                                </select>
+                            </td>
+                            <td><textarea id="message" name="userMessage"></textarea></td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td>4</td>
                             <td>Gary Jacobson</td>
                             <td>8</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><button class="btn btn-sm btn-success">Add homework</button></td>
+                            <td>
+                                <input type="radio" id="green-radio" name="color" class="color-radio" value="green">
+                                <input type="radio" id="yellow-radio" name="color" class="color-radio" value="yellow">
+                                <input type="radio" id="red-radio" name="color" class="color-radio" value="red">
+                            </td>
+                            <td>
+                                <select id="gender" name="gender" required>
+                                    <option value="male">-</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select id="gender" name="gender" required>
+                                    <option value="male">-</option>
+                                </select>
+                            </td>
+                            <td><textarea id="message" name="userMessage"></textarea></td>
                         </tr>
+                        
                     </tbody>
                 </table>
             </div>
         </section>
     </main>
-    <!-- Add Bootstrap JS scripts here -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
