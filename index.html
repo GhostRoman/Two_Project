@@ -1,18 +1,188 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Attendance System</title>
     <style>
-        .body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-item img {
+    width: 24px;
+    height: 24px;
+}
+.nav-itemi img {
+    width: 24px;
+    height: 24px;
+    
+}
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="img/free-icon-graduate-943270.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Attendance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Schedule</a> <!-- Добавлен класс text-white здесь -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Homework</a> <!-- Добавлен класс text-white здесь -->
+                </li>
+                <!-- Группа элементов справа -->
+                <li class="nav-item ml-auto">
+                    <a class="nav-link" href="#"><img src="img/notifications-bell-button.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="img/user.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="img/logout.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 class="h4 text-center">23 APRIL, TUESDAY</h1>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">1 lesson</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">2 lesson</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">3 lesson</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">4 lesson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">5 lesson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">6 lesson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">7 lesson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">8 lesson</a>
+          </li>
+      </ul>
+
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Table</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .small-font {
+            font-size: 12px;
+            color: gray;
+        }
+        .table-bordered th, .table-bordered td {
+            border: none;
         }
     </style>
 </head>
 <body>
-    kghvhjvhjvyoghljbljkbk
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="small-font">Column 1</th>
+                    <th class="small-font">Column 2</th>
+                    <th class="small-font">Column 3</th>
+                    <th class="small-font">Column 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Cell 1</td>
+                    <td>Row 1, Cell 2</td>
+                    <td>Row 1, Cell 3</td>
+                    <td>Row 1, Cell 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    <main class="container mt-4">
+        <section class="row">
+            <div class="col-md-6">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Gpa</th>
+                            <th>Is present</th>
+                            <th>Test</th>
+                            <th>Classwork</th>
+                            <th>Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ashton Hickman</td>
+                            <td>10</td>
+                            <td>HTML & CSS</td>
+                            <td></td>
+                            <td></td>
+                            <td><button class="btn btn-sm btn-success">Add homework</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mischa Roberson</td>
+                            <td>9</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button class="btn btn-sm btn-success">Add homework</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Jaydon Metcalfe</td>
+                            <td>11</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button class="btn btn-sm btn-success">Add homework</button></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Gary Jacobson</td>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button class="btn btn-sm btn-success">Add homework</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <!-- Add Bootstrap JS scripts here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
