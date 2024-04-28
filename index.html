@@ -150,7 +150,40 @@ input[type="text"] {
                             <input type="text" id="userInput" name="userInput">
                         </form>
                     </td>
-                    <td><button class="btn btn-sm btn-primary">Add homework</button></td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalWindow">Add Homework</button>
+                        <div class="modal fade" id="modalWindow" data-backdrop="static" data-keyboard="false" tabindex="-1"role="dialog"aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">New homework</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                <div class="modal-body">
+                                    <p>Topic:</p>
+                                    <form action="/submit" method="post">
+                                        <input type="text" id="userInput" name="userInput">
+                                    </form>
+                                    <br>
+                                    <form action="/submit" method="post">
+                                        <input type="text" id="userInput" name="userInput" placeholder="Choose file..." class="file-input-button"><button class="file-input-button">Browse</button>
+                                    </form>
+                                    <!-- <form class="file-input-container">
+                                        <label class="file-input-label" for="fileInput">Choose File...</label>
+                                        <input class="file-input" type="file" id="fileInput">
+                                        <button class="file-input-button">Browse</button>
+                                    </form> -->
+                                </div>
+                                <!-- блоковий елемент-контейнер для подвалу контенту -->
+                                <div class="modal-footer">
+                                    <!-- кнопка для закриття модального вікна -->
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </td>
                 </tr>
             </tbody>
         </table>
